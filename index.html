@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>아카데미느티나무</title>
+		<link rel="icon" href="" />
+		<script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		
+
+		<!-- Bootstrap Default  -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+			crossorigin="anonymous"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+		
+		<!-- Bootstrap Icon + GGFont-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+		
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+		
+
+		<link
+			rel="stylesheet"
+			as="style"
+			crossorigin
+			href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css"
+		/>
+		<link href="style.css" rel="stylesheet" />
+	</head>
+
+	<body>
+
+<!-- HEADER start -->
+	<nav class=" navbar navbar-expand-lg sticky-top bg-gradient shadow-lg navbg-custom " aria-label="Offcanvas navbar large">
+    <div class="container">
+      <a class="navbar-brand" href="#">아카데미느티나무</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</h5>
+          <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body align-items-center">
+			<ul class="navbar-nav justify-content-end flex-grow-2 pe-3">
+
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						강좌
+					</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+					</ul>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						커뮤니티
+					</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li>
+							<hr class="dropdown-divider">
+						</li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+					</ul>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="#">메뉴</a>
+				</li>
+			</ul>
+
+			<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+				<li class="nav-item dropdown">
+				<button class="btn btn-dark dropdown-toggle my-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+					김다혜
+				</button>
+				<ul class="dropdown-menu ">
+					<li><a class="dropdown-item" href="#">마이페이지</a></li>
+					<li><a class="dropdown-item" href="#">장바구니</a></li>
+					<li><a class="dropdown-item" href="#">Profile</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="#">로그아웃 </a></li>
+				</ul>
+				</li>
+			</ul>
+			<div class="my-3"></div>
+			<form class="d-flex pe-3" role="search" method="get" action="/">
+				<div class="input-group">
+				<input class="form-control " type="search"  placeholder="검색" aria-label="Search" name="s" value="">
+				<button class="btn btn-secondary me-3" type="submit" title="search" alt="search"><i class="bi bi-search"></i></button>
+				</div>
+			</form>
+		</div>	  
+      </div>
+      </div>
+  	</nav> <!-- HEADER end -->
+	
+	<!-- HERO start -->
+	<div class=" hero bg-gradient01">
+		<div class="px-4 pt-2  text-center text-light">
+			<script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+			<lord-icon
+				src="https://cdn.lordicon.com/hpxruznz.json"
+				trigger="loop" delay="3000"
+				colors="primary:#ffffff,secondary:#08a88a"
+				style="width:180px;height:180px">
+			</lord-icon>
+			<h1 class="display-4 fw-bold"><a class=" text-decoration-none text-light" href="#">너머를 상상해</a></h1>
+			<div class="col-md-4 mx-auto">
+				<p class="lead mb-4">#포스트휴머니즘 #적대주의 #국제관계읽기 #법과문학 #위트있는_글쓰기 #민주주의를_걷다 #동물권  </p>
+				<!-- <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+					<button type="button" class="btn btn-outline-light px-4  gap-3 ">button</button>
+				</div> -->
+			</div>
+		</div>
+
+		<div class="custom-shape-divider-bottom-1667480405">
+			<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+				<path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+			</svg>
+		</div>
+
+	</div>		
+	<!-- HERO end -->
+
+<!-- LIST start =================== -->
+  <div class="container px-4 py-5" id="custom-cards">
+	<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-3 border-bottom">
+      <a href="#" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <span class="fs-2 fw-bold">지금 핫한 강좌는</span>
+      </a>
+
+      <ul class="nav nav-pills col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li class="nav-item p-2"><a href="#" class="btn btn-outline-dark">마감임박</a></li>
+        <li class="nav-item p-2"><a href="#" class="btn btn-outline-dark">추천강좌</a></li>
+		<li class="nav-item p-2"><a href="#" class="btn btn-outline-dark">소모임</a></li>
+      </ul>
+
+
+ <div class="col-md-3 text-end">
+	  <a href="/" class="align-items-center mb-3 mb-md-0  text-dark text-decoration-none ">
+        <span class="fs-5 me-2">전체강좌 보기<i class="bi bi-chevron-double-right"></i></span>
+      </a>
+	  </div>	  
+    </header>
+
+
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+
+<!-- Card 1 -->
+		<div class="col">
+			<div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg bg-success">
+				<img src="https://picsum.photos/800" class="imgblur">
+					<div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 card-content">
+						<div class="d-flex justify-content-between">
+							<p>#굿모닝세미나</p>
+							<p class="fs-5">
+								<span class="badge text-bg-warning">진행중</span>
+							</p>
+						</div>
+						<h3 class="pt-2 mt-2 mb-4 display-6 fw-bold"><a class="stretched-link card-link" href="#">[온라인] 꿈투사 워크숍 - 꿈 거울로 참 나를 만나다</a></h3>
+						<ul class="d-flex list-unstyled mt-auto ">
+							<li class="d-flex align-items-top me-1">
+								<small class="card-teacher">고혜경</small>  
+							</li>
+							<li class="d-flex align-items-top mx-2 ">		
+								<strong>9.14 ~ 11.16</strong>
+							</li>
+							<li class="d-flex align-items-top  ">	
+								<small class="card-time">수 10:00~12:30 총10회</small>
+
+							</li>
+							<li class="d-flex align-items-top text-end ms-2">	
+								<small class="card-fee">400,000원 <span class="badge text-bg-light">회원할인</span></small>
+							</li>
+						</ul>
+					</div>
+				
+			</div>
+    	</div>
+	
+<!-- Card 2 -->
+		<div class="col">
+			<div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg bg-success">
+				<img src="https://picsum.photos/700" class="imgblur">
+				<div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 card-content">
+					<div class="d-flex justify-content-between">
+						<p>#특별기획</p>
+						<p class="fs-5">
+							<span class="badge text-bg-primary">대기접수</span>
+						</p>
+
+					</div>
+					<h3 class="pt-2 mt-2 mb-4 display-6 fw-bold"><a class="stretched-link card-link" href="#">포스트 휴머니즘 시대 : 인간의 권리, 인간 너머의 권리 </a></h3>
+					<ul class="d-flex list-unstyled mt-auto ">
+						<li class="d-flex align-items-top me-1">
+							<small class="card-teacher">신상규 강금실 조광희 조효제</small>  
+						</li>
+						<li class="d-flex align-items-top mx-2 ">		
+							<strong>9.20 ~ 12.14</strong>
+						</li>
+						<li class="d-flex align-items-top  ">	
+							<small class="card-time">화 19:30~21:30 총4회</small>
+
+						</li>
+						<li class="d-flex align-items-top text-end ms-2">	
+							<small class="card-fee"> 60,000월 <span class="badge text-bg-light">회원할인</span></small>
+						</li>
+					</ul>
+				</div>
+			</div>
+      	</div>
+
+<!-- Card 3-->		
+		<div class="col">
+        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg bg-success">
+			<img src="https://picsum.photos/750" class="imgblur">
+			<div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 card-content">
+			<div class="d-flex justify-content-between">
+				<p>#소모임</p>
+				<p class="fs-5">
+					<span class="badge text-bg-dark">접수마감</span>
+				</p>
+
+			</div>
+            <h3 class="pt-2 mt-2 mb-4 display-6 fw-bold"><a class="stretched-link card-link" href="#">[참가자기획] 다양한 독서모임</a></h3>
+            <ul class="d-flex list-unstyled mt-auto align-content-between">
+				<li class="d-flex align-items-top me-1">
+					<small class="card-teacher">와인독서서클 독서클럽독사</small>  
+				</li>
+				<li class="d-flex align-items-top mx-2">		
+					<strong>9.15 ~ 11.28</strong>
+				</li>
+				<li class="d-flex align-items-top">	
+					<small class="card-time">목/월 총4회</small>
+
+				</li>
+				<li class="d-flex align-items-top text-end ms-2">	
+					<small class="card-fee"> 20,000원 </small>
+				</li>
+            </ul>
+          </div>
+        </div>
+      	</div>
+
+<!-- Card 4 -->		
+		<div class="col">
+       <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg bg-success">
+		<img src="https://picsum.photos/550" class="imgblur">
+			<div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 card-content">
+			<div class="d-flex justify-content-between">
+				<p>#민주주의학교</p>
+				<p class="fs-5">
+					<span class="badge text-bg-secondary">종료</span>
+				</p>
+
+			</div>
+            <h3 class="pt-2 mt-2 mb-4 display-6 fw-bold"><a class="stretched-link card-link" href="#">왜 우리는 서로를 미워하는가? - 적대주의 반지성주의 포퓰리즘 정치적부족주의</a></h3>
+            <ul class="d-flex list-unstyled mt-auto align-content-between">
+				<li class="d-flex align-items-top me-1">
+					<small class="card-teacher">김만권 한상원 김주호 장휘</small>  
+				</li>
+				<li class="d-flex align-items-top mx-2">		
+					<strong>10.13 ~ 11.03</strong>
+				</li>
+				<li class="d-flex align-items-top">	
+					<small class="card-time">목 19:30~21:30 총 4회</small>
+
+				</li>
+				<li class="d-flex align-items-top text-end ms-2">	
+					<small class="card-fee"> 60,000원 </small>
+				</li>
+            </ul>
+          </div>
+        </div>
+      	</div>
+
+<!-- Card 5 -->
+		<div class="col">
+			<div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg bg-success">
+				<img src="https://picsum.photos/400" class="imgblur">
+					<div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 card-content">
+						<div class="d-flex justify-content-between">
+							<p>#인문학교</p>
+							<p class="fs-5">
+								<span class="badge text-bg-primary">접수중</span>
+							</p>
+						</div>
+						<h3 class="pt-2 mt-2 mb-4 display-6 fw-bold"><a class="stretched-link card-link" href="#">기후-생태 위기와 인권</a></h3>
+						<ul class="d-flex list-unstyled mt-auto ">
+							<li class="d-flex align-items-top mx-2">
+								<small class="card-teacher">조효제</small>  
+							</li>
+							<li class="d-flex align-items-top mx-2 ">		
+								<strong>12.14</strong>
+							</li>
+							<li class="d-flex align-items-top  ">	
+								<small class="card-time">화 19:30~21:30 총1회</small>
+
+							</li>
+							<li class="d-flex align-items-top text-end ms-2">	
+								<small class="card-fee">20,000원 <span class="badge text-bg-light">회원할인</span></small>
+							</li>
+						</ul>
+					</div>
+				
+			</div>
+    	</div>
+	
+<!-- Card 6 -->
+		<div class="col">
+			<div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg bg-success">
+				<img src="https://picsum.photos/700" class="imgblur">
+				<div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 card-content">
+					<div class="d-flex justify-content-between">
+						<p>#인문학교</p>
+						<p class="fs-5">
+							<span class="badge text-bg-primary">접수중</span>
+						</p>
+
+					</div>
+					<h3 class="pt-2 mt-2 mb-4 display-6 fw-bold"><a class="stretched-link card-link" href="#">[온라인] 고전과 명화로 보는 민주주의의 기원과 위기 </a></h3>
+					<ul class="d-flex list-unstyled mt-auto ">
+						<li class="d-flex align-items-top me-1">
+							<small class="card-teacher">김태권</small>  
+						</li>
+						<li class="d-flex align-items-top mx-2 ">		
+							<strong>11.17 ~ 12.15</strong>
+						</li>
+						<li class="d-flex align-items-top  ">	
+							<small class="card-time">목 19:30~21:30 총5회</small>
+
+						</li>
+						<li class="d-flex align-items-top text-end ms-2">	
+							<small class="card-fee"> 75,000월 <span class="badge text-bg-light">회원할인</span></small>
+						</li>
+					</ul>
+				</div>
+			</div>
+      	</div>
+
+<!-- Card 7-->		
+		<div class="col">
+        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg bg-success">
+			<img src="https://picsum.photos/750" class="imgblur">
+			<div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 card-content">
+			<div class="d-flex justify-content-between">
+				<p>#인문학교</p>
+				<p class="fs-5">
+					<span class="badge text-bg-primary">접수중</span>
+				</p>
+
+			</div>
+            <h3 class="pt-2 mt-2 mb-4 display-6 fw-bold"><a class="stretched-link card-link" href="#">비인간 존재의 권리를 말하는 이유</a></h3>
+            <ul class="d-flex list-unstyled mt-auto align-content-between">
+				<li class="d-flex align-items-top me-1">
+					<small class="card-teacher">조광희</small>  
+				</li>
+				<li class="d-flex align-items-top mx-2">		
+					<strong>11.15</strong>
+				</li>
+				<li class="d-flex align-items-top">	
+					<small class="card-time">화 19:30~21:30 총1회</small>
+
+				</li>
+				<li class="d-flex align-items-top text-end ms-2">	
+					<small class="card-fee"> 20,000원 </small>
+				</li>
+            </ul>
+          </div>
+        </div>
+      	</div>
+
+<!-- Card 8-->		
+		<div class="col">
+        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg bg-success">
+			<img src="https://picsum.photos/520" class="imgblur">
+			<div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 card-content">
+			<div class="d-flex justify-content-between">
+				<p>#민주주의학교</p>
+				<p class="fs-5">
+					<span class="badge text-bg-primary">접수중</span>
+				</p>
+
+			</div>
+            <h3 class="pt-2 mt-2 mb-4 display-6 fw-bold"><a class="stretched-link card-link" href="#">[탐방] 민주주의를 걷다_영등포를 걷다</a></h3>
+            <ul class="d-flex list-unstyled mt-auto align-content-between">
+				<li class="d-flex align-items-top me-1">
+					<small class="card-teacher">한종수</small>  
+				</li>
+				<li class="d-flex align-items-top mx-2">		
+					<strong>11.15</strong>
+				</li>
+				<li class="d-flex align-items-top">	
+					<small class="card-time">토 15:00~17:30 총1회</small>
+
+				</li>
+				<li class="d-flex align-items-top text-end ms-2">	
+					<small class="card-fee"> 20,000원 <span class="badge text-bg-light">회원할인</span></small>
+				</li>
+            </ul>
+          </div>
+        </div>
+      	</div>
+
+<!-- Card 9-->		
+		<div class="col">
+        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg bg-success">
+			<img src="https://picsum.photos/730" class="imgblur">
+			<div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 card-content">
+			<div class="d-flex justify-content-between">
+				<p>#시민예술학교</p>
+				<p class="fs-5">
+					<span class="badge text-bg-warning">진행중</span>
+				</p>
+
+			</div>
+            <h3 class="pt-2 mt-2 mb-4 display-6 fw-bold"><a class="stretched-link card-link" href="#">[시민연극워크숍] 손바닥 연극 워크숍</a></h3>
+            <ul class="d-flex list-unstyled mt-auto align-content-between">
+				<li class="d-flex align-items-top me-1">
+					<small class="card-teacher">강우정</small>  
+				</li>
+				<li class="d-flex align-items-top mx-2">		
+					<strong>10.05 ~ 12.03</strong>
+				</li>
+				<li class="d-flex align-items-top">	
+					<small class="card-time">수 19:30~22:00 총10회</small>
+
+				</li>
+				<li class="d-flex align-items-top text-end ms-2">	
+					<small class="card-fee">300,000원 <span class="badge text-bg-light">회원할인</span> </small>
+				</li>
+            </ul>
+          </div>
+        </div>
+      	</div>
+
+    </div>
+  </div>
+
+<div class="container">
+<div class="scrolling-wrapper">
+  <div class="card"><h2>Card</h2></div>
+  <div class="card"><h2>Card</h2></div>
+  <div class="card"><h2>Card</h2></div>
+  <div class="card"><h2>Card</h2></div>
+  <div class="card"><h2>Card</h2></div>
+  <div class="card"><h2>Card</h2></div>
+  <div class="card"><h2>Card</h2></div>
+  <div class="card"><h2>Card</h2></div>
+  <div class="card"><h2>Card</h2></div>
+</div>
+</div>
+
+
+		
+	<!-- FOOTER start -->
+	<div class="footer">
+			<div class="container">
+				<footer class="py-5">
+					<div class="row">
+						<div class="col-md-2 mb-3">
+							<h2 class="logoTitle">아카데미 느티나무</h2>
+							<ul class="nav flex-column">
+
+						</div>
+
+						<div class="col-6 col-md-2 mb-3">
+							<!-- <h5>Section</h5> -->
+							<ul class="nav flex-column">
+								<li class="nav-item mb-2">
+									<a href="#" class="nav-link p-0 text-muted">소개</a>
+								</li>
+								<li class="nav-item mb-2">
+									<a href="#" class="nav-link p-0 text-muted">오시는길</a>
+								</li>
+								<li class="nav-item mb-2">
+									<a href="#" class="nav-link p-0 text-muted">카톡방</a>
+								</li>
+								<li class="nav-item mb-2">
+									<a href="#" class="nav-link p-0 text-muted">FAQs</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-6 col-md-2 mb-3">
+							<!-- <h5>Section</h5> -->
+							<ul class="nav flex-column">
+								<li class="nav-item mb-2">
+									<a href="#" class="nav-link p-0 text-muted">이용약관 </a>
+								</li>
+								<li class="nav-item mb-2">
+									<a href="#" class="nav-link p-0 text-muted">개인정보처리방침</a>
+								</li>
+								<li class="nav-item mb-2">
+									<a href="https://secure.donus.org/peoplepower21/pay/step1?dontype=P10101&period=pledge&price=20000" class="nav-link p-0 text-muted">참여연대 회원가입</a>
+								</li>
+								<li class="nav-item mb-2">
+									<a href="#" class="nav-link p-0 text-muted">FAQs</a>
+								</li>
+							</ul>
+						</div>
+
+
+
+						<div class="col-md-4 offset-md-2 mb-3">
+							<form>
+								<h5>뉴스레터 구독하기</h5>
+								<p>아카데미 강좌를 빠르게 안내 받으세요</p>
+								<div class="d-flex flex-column flex-sm-row w-100 gap-2  ">
+									<label for="newsletter1" class="visually-hidden"
+										>Email address</label
+									>
+									<input
+										id="newsletter1"
+										type="text"
+										class="form-control"
+										placeholder="이메일"
+									/>
+									<button class="btn btn-dark w-25" type="button">구독하기</button>
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<div
+						class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+					>
+						<p class="text-muted fw-light fs-6">&copy;<span id="year"></span> <span class="fw-semibold"><a class="link-dark text-decoration-none"
+											href="https://www.peoplepower21.org/"
+											target="_blank"
+											title="참여연대 홈페이지 바로가기"
+									>참여연대</a></span>. Some
+									Rights Reserved
+									<a class="link-dark text-decoration-none text-black-50"
+											href="https://creativecommons.org/licenses/by-nc/4.0/"
+											target="_blank"
+											rel="license noopener"
+									>cc by-nc 4.0</a
+									>.</p>
+						<ul class="list-unstyled d-flex">
+							<li class="ms-3">
+								<a class="link-dark" href="https://open.kakao.com/o/gPam4kZd" target="_blank" title="kakaoTalk"><i class="bi bi-chat-fill fs-4"> </i></a>
+							</li>
+							<li class="ms-3">
+								<a class="link-dark" href="https://www.facebook.com/peoplepower21/" target="_blank" title="facebook"><i class="bi bi-facebook fs-4"> </i></a>
+							</li>
+							<li class="ms-3">
+								<a class="link-dark" href="https://linktr.ee/Neutinamu" target="_blank" title="linktree"><i class="bi bi-tree-fill fs-4"> </i></a>
+							</li>
+
+						
+						</ul>
+					</div>
+				</footer>
+				<script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
+			</div> 
+	</div><!-- FOOTER end -->		
+	</body>
+</html>

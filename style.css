@@ -1,0 +1,196 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+/* 공통 ========================= */
+
+body {
+	font-family: "Pretendard Variable", Pretendard, -apple-system,
+		BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+		"Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+	word-break: keep-all;
+}
+
+:root {
+	--link-color: white;
+	--link-hover: yellowgreen;
+}
+
+.logoTitle {
+	font-family: "Gowun Dodum", sans-serif;
+	letter-spacing: -0.1rem;
+	word-break: keep-all;
+	line-height: 0.95em;
+	font-weight: bold;
+}
+
+/* .logoTitle a:hover {
+	background: linear-gradient(60deg, #0fd850, #f9f047);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+} */
+
+.navbg-custom,
+.hero {
+	background-color: whitesmoke;
+}
+
+.custom-shape-divider-bottom-1667480405 {
+	position: relative;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1667480405 svg {
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 60px;
+}
+
+.custom-shape-divider-bottom-1667480405 .shape-fill {
+	fill: #ffffff;
+}
+
+/* Main  =========================
+
+card ========================= */
+
+.bg-gradient01 {
+	background: linear-gradient(-45deg, #5961f9, #198251, #0ba360, #f4d03f);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+.bg-gradient02 {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.card {
+	top: 0px;
+	transition: 0.3s;
+}
+.card:hover {
+	top: -5px;
+}
+
+.card h3 {
+	line-height: 1.15em;
+}
+
+.card-link {
+	color: var(--link-color);
+	text-decoration: none;
+
+	overflow: hidden;
+	text-overflow: ellipsis;
+	/* height: 3.2em; */
+	text-align: left;
+	word-wrap: break-word;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+}
+.card-link:hover {
+	color: var(--link-hover);
+}
+
+.imgblur {
+	position: absolute;
+	filter: blur(8px) grayscale(100%);
+	mix-blend-mode: multiply;
+	background-size: cover;
+}
+
+.card-content {
+	z-index: 1;
+}
+
+.footer {
+	background-color: lightgray;
+}
+
+/* test */
+
+.scrolling-wrapper {
+	max-height: 300 px;
+	border: 1px solid #ddd;
+	display: flex;
+	overflow-x: auto;
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+	width: 0;
+}
+
+.scrolling-wrapper .card {
+	min-width: 200px;
+	height: 200px;
+	line-height: 110px;
+	text-align: center;
+	background-color: tomato;
+	margin-right: 5px;
+}
+
+/* COURSES_DETAIL 상세페이지 ================== */
+
+.review_message {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	display: -webkit-box;
+	-webkit-line-clamp: 6;
+	-webkit-box-orient: vertical;
+}
+
+.custom-tooltip {
+	--bs-tooltip-bg: var(--bs-primary);
+}
+
+#goTopBtn {
+	position: fixed;
+	bottom: 200px;
+	right: 16px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: lightgrey;
+	color: white;
+	cursor: pointer;
+	padding: 10px;
+	border: 1px solid white;
+}
+
+#goTopBtn:hover {
+	background-color: grey;
+}
+
+.bi-heart {
+	color: orangered;
+	cursor: pointer;
+	font-size: 1.2rem;
+}
+
+.bi-heart-fill {
+	color: orangered;
+	cursor: pointer;
+	font-size: 1.2rem;
+}
