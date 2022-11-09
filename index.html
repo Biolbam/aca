@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>아카데미느티나무</title>
-		<link rel="icon" href="" />
+		<link rel="icon" href="img/pspd_favicon_aca.svg" />
 		<script src="https://cdn.lordicon.com/lusqsztk.js"></script>
 		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 		
@@ -43,7 +43,43 @@
 
 	<body>
 
-<!-- HEADER start -->
+<!-- ===== HEADER NAVBAR =================== -->
+	<!-- Modal start -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		<div class="modal-content rounded-4 shadow">
+		<div class="modal-header p-5 pb-4 border-bottom-0">
+			<!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
+			<h1 class="fw-bold mb-0 fs-2">아카데미 회원 로그인</h1>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+
+		<div class="modal-body p-5 pt-0">
+			<form class="">
+			<div class="form-floating mb-3">
+				<input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+				<label for="floatingInput">Email</label>
+			</div>
+			<div class="form-floating mb-3">
+				<input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+				<label for="floatingPassword">Password</label>
+			</div>
+			<button class="w-100 mb-2 btn btn-lg rounded-3 btn-outline-primary" type="submit">로그인하기</button>
+			<small class="text-muted">By clicking Sign up, you agree to the <a href="">이용약관</a>에 동의하시는겁니다</small>
+			<hr class="my-4">
+			<h2 class="fs-5 fw-bold mb-3">다른 방법으로 로그인하기</h2>
+			<button class="w-100 py-2 mb-2 btn btn-success rounded-3" type="submit">
+				Gmail으로 로그인
+			</button>
+			<button class="w-100 py-2 mb-2 btn btn-warning rounded-3" type="submit">
+				카카오톡으로 로그인
+			</button>
+			</form>
+		</div>
+		</div>
+	</div>s
+	</div><!-- Modal end-->
+	<!-- HEADER start -->
 	<nav class=" navbar navbar-expand-lg sticky-top bg-gradient shadow-lg navbg-custom " aria-label="Offcanvas navbar large">
     <div class="container">
       <a class="navbar-brand" href="/#"><h1 class="logoTitle fs-4 mb-0">아카데미느티나무</h1></a>
@@ -74,12 +110,12 @@
 						커뮤니티
 					</a>
 					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="somoim.html">참가자소모임</a></li>
+						<li><a class="dropdown-item" href="somoim.html">소모임</a></li>
 						<li>
 							<hr class="dropdown-divider">
 						</li>
 						<li><a class="dropdown-item" href="notice.html">공지사항</a></li>
-						<li><a class="dropdown-item" href="together.html">교육나눔게시판</a></li>
+						<li><a class="dropdown-item" href="together.html">배움나눔</a></li>
 						
 					</ul>
 				</li>
@@ -90,26 +126,30 @@
 					<ul class="dropdown-menu">
 						<li><a class="dropdown-item" href="QnA.html">문의하기</a></li>
 						<li><a class="dropdown-item" href="faq.html">FAQs</a></li>
-						
+						<li><a class="dropdown-item" href="faq.html">오시는길</a></li>
 					</ul>
 				</li>
 				</li>
 			</ul>
-
 			<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+				
+				
 				<li class="nav-item dropdown">
-				<button class="btn btn-dark dropdown-toggle my-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-					김다혜
+				<button class="btn btn-outline-dark dropdown-toggle my-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+					김로긴
 				</button>
 				<ul class="dropdown-menu dropdown-menu-end">
 					<li><a class="dropdown-item" href="#">마이페이지</a></li>
-					<li><a class="dropdown-item" href="#">장바구니</a></li>
-					<li><a class="dropdown-item" href="#">Profile</a></li>
+					<li><a class="dropdown-item" href="#">회원정보</a></li>
 					<li><hr class="dropdown-divider"></li>
-					<li><a class="dropdown-item" href="#">로그아웃 </a></li>
+					<p class="dropdown-item mb-0" data-bs-toggle="modal" data-bs-target="#exampleModal">로그인</p>
+					<li><a class="dropdown-item" href="#">로그아웃</a></li>
 				</ul>
 				</li>
 			</ul>
+
+
 			<div class="my-3"></div>
 			<form class="d-flex pe-3" role="search" method="get" action="/">
 				<div class="input-group">
@@ -121,6 +161,7 @@
       </div>
       </div>
   	</nav> <!-- HEADER end -->
+<!-- ===== HEADER NAVBAR End =================== -->				
 	
 	<!-- HERO start -->
 	<div class=" hero bg-gradient01">
@@ -134,7 +175,7 @@
 			</lord-icon>
 			<h1 class="display-4 fw-bold"><a class=" text-decoration-none text-light" href="#">너머를 상상해</a></h1>
 			<div class="col-md-4 mx-auto">
-				<p class="lead mb-4">#포스트휴머니즘 #적대주의 #국제관계읽기 #법과문학 #위트있는_글쓰기 #민주주의를_걷다 #동물권  </p>
+				<p class="lead mb-4">이곳 텍스트와 아이콘을 분기별로 바꿔봐요 #포스트휴머니즘 #적대주의 #국제관계읽기 #법과문학 #동물권 어쩌고 저쩌고  </p>
 				<!-- <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
 					<button type="button" class="btn btn-outline-light px-4  gap-3 ">button</button>
 				</div> -->
@@ -154,7 +195,7 @@
   <div class="container px-4 py-5" id="custom-cards">
 	<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-3 border-bottom">
       <a href="#" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-        <span class="fs-2 fw-bold">지금 핫한 강좌는</span>
+        <span class="fs-2 fw-bold lh-1">지금 핫한 강좌</span>
       </a>
 
       <ul class="nav nav-pills col-12 col-md-auto mb-2 justify-content-center mb-md-0">
@@ -165,7 +206,7 @@
 
 
  <div class="col-md-3 text-end">
-	  <a href="/" class="align-items-center mb-3 mb-md-0  text-dark text-decoration-none ">
+	  <a href="courses.html" class="align-items-center mb-3 mb-md-0  text-dark text-decoration-none ">
         <span class="fs-5 me-2">전체강좌 보기<i class="bi bi-chevron-double-right"></i></span>
       </a>
 	  </div>	  
@@ -185,7 +226,7 @@
 								<span class="badge text-bg-warning">진행중</span>
 							</p>
 						</div>
-						<h3 class="pt-2 mt-2 mb-4 display-6 fw-bold"><a class="stretched-link card-link" href="#">[온라인] 꿈투사 워크숍 - 꿈 거울로 참 나를 만나다</a></h3>
+						<h3 class="pt-2 mt-2 mb-4 display-6 fw-bold"><a class="stretched-link card-link" href="courses_detail.html">[온라인] 꿈투사 워크숍 - 꿈 거울로 참 나를 만나다</a></h3>
 						<ul class="d-flex list-unstyled mt-auto ">
 							<li class="d-flex align-items-top me-1">
 								<small class="card-teacher">고혜경</small>  
@@ -214,7 +255,7 @@
 					<div class="d-flex justify-content-between">
 						<p>#특별기획</p>
 						<p class="fs-5">
-							<span class="badge text-bg-primary">대기접수</span>
+							<span class="badge text-bg-primary">접수중</span>
 						</p>
 
 					</div>
@@ -466,6 +507,7 @@
   </div>
 
 <div class="container">
+	<h1>소모임 보여주기 </h1>
 <div class="scrolling-wrapper">
   <div class="card"><h2>Card</h2></div>
   <div class="card"><h2>Card</h2></div>
@@ -478,6 +520,46 @@
   <div class="card"><h2>Card</h2></div>
 </div>
 </div>
+
+
+<div class="container">
+	<h1>후기 보여주기  </h1>
+<div class="scrolling-wrapper">
+  <div class="card"><h2>Card</h2></div>
+  <div class="card"><h2>Card</h2></div>
+  <div class="card"><h2>Card</h2></div>
+  <div class="card"><h2>Card</h2></div>
+  <div class="card"><h2>Card</h2></div>
+  <div class="card"><h2>Card</h2></div>
+  <div class="card"><h2>Card</h2></div>
+  <div class="card"><h2>Card</h2></div>
+  <div class="card"><h2>Card</h2></div>
+</div>
+</div>
+
+
+<main>
+
+  <div class="px-4 py-5 my-5 text-center">
+    <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/lupuorrc.json"
+    trigger="loop"
+	colors="primary:#333333,secondary:#188754"
+    delay="3000"
+    style="width:150px;height:150px">
+</lord-icon>
+    <h1 class="display-3 fw-light text-success">놓치지 마세요</h1>
+	<h1 class="display-5 fw-bolder">참여연대 회원 30% 할인혜택</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">참여연대 부설 교육기관 아카데미느티나무는 개인과 사회의 문제를 해결하는 힘을 키우려는 시민들이 즐겁게 만나고 서로를 환대하는 배움의 공간입니다. <span class="fw-bold">참여연대 후원회원(월 1만원 이상 후원)에게는 수강료 30% 할인 혜택을 드립니다.</span></p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-success btn-lg px-4 gap-3">지금 참여연대 후원회원 되기 <i class="bi bi-arrow-right-short"></i></button>
+       
+      </div>
+    </div>
+  </div>
+</main>  
 
 
 		
@@ -630,6 +712,29 @@
 	document.documentElement.scrollTop = 0;
 	}
 	</script> <!-- scroll to top end-->
+
+	<!-- TOAST start-->
+	<script>
+		const toastTrigger = document.getElementById('liveToastBtn')
+		const toastLiveExample = document.getElementById('liveToast')
+		if (toastTrigger) {
+		toastTrigger.addEventListener('click', () => {
+			const toast = new bootstrap.Toast(toastLiveExample)
+
+			toast.show()
+		})
+		}
+	</script><!-- TOAST end-->
+
+<!-- MODAL -->
+	<script>
+		const myModal = document.getElementById('myModal')
+		const myInput = document.getElementById('myInput')
+
+		myModal.addEventListener('shown.bs.modal', () => {
+		myInput.focus()
+		})
+	</script><!-- MODAL -->
 
 </body>
 </html>

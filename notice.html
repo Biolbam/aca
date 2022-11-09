@@ -43,10 +43,46 @@
 	</head>
 	<body>
 
-<!-- HEADER start -->
+<!-- ===== HEADER NAVBAR =================== -->
+	<!-- Modal start -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		<div class="modal-content rounded-4 shadow">
+		<div class="modal-header p-5 pb-4 border-bottom-0">
+			<!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
+			<h1 class="fw-bold mb-0 fs-2">아카데미 회원 로그인</h1>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+
+		<div class="modal-body p-5 pt-0">
+			<form class="">
+			<div class="form-floating mb-3">
+				<input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+				<label for="floatingInput">Email</label>
+			</div>
+			<div class="form-floating mb-3">
+				<input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+				<label for="floatingPassword">Password</label>
+			</div>
+			<button class="w-100 mb-2 btn btn-lg rounded-3 btn-outline-primary" type="submit">로그인하기</button>
+			<small class="text-muted">By clicking Sign up, you agree to the <a href="">이용약관</a>에 동의하시는겁니다</small>
+			<hr class="my-4">
+			<h2 class="fs-5 fw-bold mb-3">다른 방법으로 로그인하기</h2>
+			<button class="w-100 py-2 mb-2 btn btn-success rounded-3" type="submit">
+				Gmail으로 로그인
+			</button>
+			<button class="w-100 py-2 mb-2 btn btn-warning rounded-3" type="submit">
+				카카오톡으로 로그인
+			</button>
+			</form>
+		</div>
+		</div>
+	</div>s
+	</div><!-- Modal end-->
+	<!-- HEADER start -->
 	<nav class=" navbar navbar-expand-lg sticky-top bg-gradient shadow-lg navbg-custom " aria-label="Offcanvas navbar large">
     <div class="container">
-      <a class="navbar-brand" href="/index.html"><h1 class="logoTitle fs-4 mb-0">아카데미느티나무</h1></a>
+      <a class="navbar-brand" href="/#"><h1 class="logoTitle fs-4 mb-0">아카데미느티나무</h1></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -58,58 +94,62 @@
         <div class="offcanvas-body align-items-center">
 			<ul class="navbar-nav justify-content-end flex-grow-2 pe-3">
 				<li class="nav-item">
-					<a class="nav-link link-secondary" href="/about.html" >소개</a>
+					<a class="nav-link link-secondary" href="about.html" >소개</a>
 				</li>
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="/courses.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					<a class="nav-link dropdown-toggle" href="courses.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 						강좌
 					</a>
 					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="/courses.html">강좌목록</a></li>
-						<li><a class="dropdown-item" href="/courses_review.html">강좌후기</a></li>
+						<li><a class="dropdown-item" href="courses.html">강좌목록</a></li>
+						<li><a class="dropdown-item" href="courses_review.html">강좌후기</a></li>
 					</ul>
 				</li>
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="/somoim.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					<a class="nav-link dropdown-toggle" href="somoim.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 						커뮤니티
 					</a>
 					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="/somoim.html">참가자소모임</a></li>
+						<li><a class="dropdown-item" href="somoim.html">소모임</a></li>
 						<li>
 							<hr class="dropdown-divider">
 						</li>
-						<li><a class="dropdown-item" href="/notice.html">공지사항</a></li>
-						<li><a class="dropdown-item" href="/together.html">교육나눔게시판</a></li>
+						<li><a class="dropdown-item" href="notice.html">공지사항</a></li>
+						<li><a class="dropdown-item" href="together.html">배움나눔</a></li>
 						
 					</ul>
 				</li>
 				<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="/QnA.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				<a class="nav-link dropdown-toggle" href="QnA.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 						문의
 					</a>
 					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="/QnA.html">문의하기</a></li>
-						<li><a class="dropdown-item" href="/faq.html">FAQs</a></li>
-						
+						<li><a class="dropdown-item" href="QnA.html">문의하기</a></li>
+						<li><a class="dropdown-item" href="faq.html">FAQs</a></li>
+						<li><a class="dropdown-item" href="faq.html">오시는길</a></li>
 					</ul>
 				</li>
 				</li>
 			</ul>
-
 			<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+				
+				
 				<li class="nav-item dropdown">
-				<button class="btn btn-dark dropdown-toggle my-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-					김다혜
+				<button class="btn btn-outline-dark dropdown-toggle my-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+					김로긴
 				</button>
 				<ul class="dropdown-menu dropdown-menu-end">
 					<li><a class="dropdown-item" href="#">마이페이지</a></li>
-					<li><a class="dropdown-item" href="#">장바구니</a></li>
-					<li><a class="dropdown-item" href="#">Profile</a></li>
+					<li><a class="dropdown-item" href="#">회원정보</a></li>
 					<li><hr class="dropdown-divider"></li>
-					<li><a class="dropdown-item" href="#">로그아웃 </a></li>
+					<p class="dropdown-item mb-0" data-bs-toggle="modal" data-bs-target="#exampleModal">로그인</p>
+					<li><a class="dropdown-item" href="#">로그아웃</a></li>
 				</ul>
 				</li>
 			</ul>
+
+
 			<div class="my-3"></div>
 			<form class="d-flex pe-3" role="search" method="get" action="/">
 				<div class="input-group">
@@ -121,6 +161,7 @@
       </div>
       </div>
   	</nav> <!-- HEADER end -->
+<!-- ===== HEADER NAVBAR End =================== -->	
 
 
 <!-- DETAIL start =================== -->

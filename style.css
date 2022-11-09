@@ -13,7 +13,7 @@ body {
 
 :root {
 	--link-color: white;
-	--link-hover: yellowgreen;
+	--link-green: #7bed9f;
 }
 
 .logoTitle {
@@ -86,10 +86,10 @@ card ========================= */
 
 .card {
 	top: 0px;
-	transition: 0.3s;
+	transition: opacity 0.15s linear;
 }
 .card:hover {
-	top: -5px;
+	top: -6px;
 }
 
 .card h3 {
@@ -99,7 +99,6 @@ card ========================= */
 .card-link {
 	color: var(--link-color);
 	text-decoration: none;
-
 	overflow: hidden;
 	text-overflow: ellipsis;
 	/* height: 3.2em; */
@@ -110,7 +109,7 @@ card ========================= */
 	-webkit-box-orient: vertical;
 }
 .card-link:hover {
-	color: var(--link-hover);
+	color: var(--link-green);
 }
 
 .imgblur {
@@ -125,7 +124,7 @@ card ========================= */
 }
 
 .footer {
-	background-color: lightgray;
+	background-color: whitesmoke;
 }
 
 /* test */
