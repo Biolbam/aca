@@ -5,6 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>강좌목록</title>
+		<link rel="icon" href="img/pspd_favicon_aca.svg" />
+
 		<link rel="icon" href="" />
 		<script src="https://cdn.lordicon.com/lusqsztk.js"></script>
 		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -82,7 +84,7 @@
 	<!-- HEADER start -->
 	<nav class=" navbar navbar-expand-lg sticky-top bg-gradient shadow-lg navbg-custom " aria-label="Offcanvas navbar large">
     <div class="container">
-      <a class="navbar-brand" href="/#"><h1 class="logoTitle fs-4 mb-0">아카데미느티나무</h1></a>
+      <a class="navbar-brand " href="/index.html"><h1 class="logoTitle fs-4 mb-0 me-3">아카데미느티나무</h1></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -93,42 +95,30 @@
         </div>
         <div class="offcanvas-body align-items-center">
 			<ul class="navbar-nav justify-content-end flex-grow-2 pe-3">
-				<li class="nav-item">
-					<a class="nav-link link-secondary" href="about.html" >소개</a>
+
+				<li class="nav-item dropdown">
+					<li class="nav-item fw-bold">
+					<a class="nav-link " aria-current="page" href="courses.html" >강좌</a>
 				</li>
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="courses.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-						강좌
-					</a>
-					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="courses.html">강좌목록</a></li>
-						<li><a class="dropdown-item" href="courses_review.html">강좌후기</a></li>
-					</ul>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="somoim.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					<a class="nav-link dropdown-toggle fw-bold" href="somoim.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 						커뮤니티
 					</a>
 					<ul class="dropdown-menu">
 						<li><a class="dropdown-item" href="somoim.html">소모임</a></li>
+						<li><a class="dropdown-item" href="courses_review.html">수강후기</a></li>
 						<li>
 							<hr class="dropdown-divider">
 						</li>
-						<li><a class="dropdown-item" href="notice.html">공지사항</a></li>
 						<li><a class="dropdown-item" href="together.html">배움나눔</a></li>
+						<!-- <li><a class="dropdown-item" href="notice.html">공지사항</a></li> -->
 						
 					</ul>
 				</li>
 				<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="QnA.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-						문의
-					</a>
-					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="QnA.html">문의하기</a></li>
-						<li><a class="dropdown-item" href="faq.html">FAQs</a></li>
-						<li><a class="dropdown-item" href="faq.html">오시는길</a></li>
-					</ul>
-				</li>
+					<li class="nav-item">
+					<a class="nav-link link-secondary" href="QnA.html" >문의</a>
+					</li>
 				</li>
 			</ul>
 			<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -136,11 +126,11 @@
 				
 				
 				<li class="nav-item dropdown">
-				<button class="btn btn-outline-dark dropdown-toggle my-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+				<button class="btn btn-dark dropdown-toggle my-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 					김로긴
 				</button>
 				<ul class="dropdown-menu dropdown-menu-end">
-					<li><a class="dropdown-item" href="#">마이페이지</a></li>
+					<li><a class="dropdown-item" href="mypage.html">마이페이지</a></li>
 					<li><a class="dropdown-item" href="#">회원정보</a></li>
 					<li><hr class="dropdown-divider"></li>
 					<p class="dropdown-item mb-0" data-bs-toggle="modal" data-bs-target="#exampleModal">로그인</p>
@@ -161,7 +151,7 @@
       </div>
       </div>
   	</nav> <!-- HEADER end -->
-<!-- ===== HEADER NAVBAR End =================== -->	
+<!-- ===== HEADER NAVBAR End =================== -->		
 	
 	<!-- HERO start -->
 	<!-- <div class=" hero bg-gradient01">
@@ -195,7 +185,7 @@
 	<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-3 border-bottom">
 
       <a href="#" class="d-flex align-items-center  mb-2 mb-md-0 text-dark text-decoration-none">
-        <span class="fs-2 fw-bold">강좌목록</span>
+        <span class="fs-2 fw-bold">전체강좌</span>
       </a>
 
       <ul class="nav nav-pills col-12 col-md-auto mb-2 justify-content-center mb-md-0">
@@ -207,14 +197,30 @@
 		<li class="nav-item p-2"><a href="#" class="btn btn-outline-dark">인문</a></li>
 		<li class="nav-item p-2"><a href="#" class="btn btn-outline-dark">자아탐색</a></li>
         <li class="nav-item p-2"><a href="#" class="btn btn-outline-dark">특강</a></li>
+		<li class="nav-item p-2"><a href="#" class="btn btn-outline-info" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-bs-title="<b>'참가자'</b>는 참가자들이 스스로 기획하고 자발적으로 운영하는 프로그램입니다" >참가자</a></li>
 		
       </ul>
-
- 	<div class=" text-end">
+	<div class="col-md-2">
+	  <div class="input-group my-2">
+			<button type="button" class="btn btn-outline-dark dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+				검색<span class="visually-hidden">Toggle Dropdown</span>
+			</button>
+			<ul class="dropdown-menu ">
+			<li><a class="dropdown-item" href="#">강좌명</a></li>
+			<li><a class="dropdown-item" href="#">강사이름</a></li>
+			<li><a class="dropdown-item" href="#">제목+내용</a></li>
+			<li><a class="dropdown-item" href="#">연도</a></li>
+			
+			</ul>
+			<input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+			<button class="btn btn-secondary me-3" type="submit" title="search" alt="search"><i class="bi bi-search"></i></button>
+		</div>
+		</div>	
+ 	<!-- <div class=" text-end">
 	  <a href="/" class="align-items-center mb-3 mb-md-0  text-dark text-decoration-none ">
         <span class="fs-5 me-2">소모임<i class="bi bi-chevron-double-right"></i></span>
       </a>
-	  </div>	
+	  </div>	 -->
 
 
     </header>
@@ -288,17 +294,17 @@
 
 <!-- Card 3-->		
 		<div class="col">
-        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg bg-success">
+        <div class="card card-cover h-100 overflow-hidden rounded-4 shadow-lg bg-info">
 			<img src="https://picsum.photos/750" class="imgblur">
 			<div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 card-content">
 			<div class="d-flex justify-content-between">
-				<p>#소모임</p>
+				<p>#참가자</p>
 				<p class="fs-5">
 					<span class="badge text-bg-dark">접수마감</span>
 				</p>
 
 			</div>
-            <h3 class="pt-2 mt-2 mb-4 display-6 fw-bold"><a class="stretched-link card-link" href="#">[참가자기획] 다양한 독서모임</a></h3>
+            <h3 id="chamgi" class="pt-2 mt-2 mb-4 display-6 fw-bold"><a class="stretched-link card-link" href="#">[참가자기획] 다양한 독서모임</a></h3>
             <ul class="d-flex list-unstyled mt-auto align-content-between">
 				<li class="d-flex align-items-top me-1">
 					<small class="card-teacher">와인독서서클 독서클럽독사</small>  
@@ -514,7 +520,27 @@
 
 
 	<!-- LIST : SEARCH  -->
-	<div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+<div class="text-center">
+	<div class="btn-group my-2" role="group" aria-label="First group">
+			<button type="button" class="btn btn-outline-secondary "><a class=" text-secondary my-0 text-decoration-none" href="#" aria-label="Previous">
+				<span aria-hidden="true" class="my-0">&laquo;</span>
+			</a></button>
+			<button type="button" class="btn btn-outline-secondary">1</button>
+			<button type="button" class="btn btn-outline-secondary">2</button>
+			<button type="button" class="btn btn-outline-secondary">3</button>
+			<button type="button" class="btn btn-outline-secondary">4</button>
+			<button type="button" class="btn btn-outline-secondary">5</button>
+			<button type="button" class="btn btn-outline-secondary">6</button>
+			<button type="button" class="btn btn-outline-secondary">7</button>
+			<button type="button" class="btn btn-outline-secondary">8</button>
+			<button type="button" class="btn btn-outline-secondary">9</button>
+			<button type="button" class="btn btn-outline-secondary">10</button>
+			<button type="button" class="btn btn-outline-secondary "><a class=" text-secondary my-0 text-decoration-none" href="#" aria-label="Next">
+				<span aria-hidden="true" class="my-0">&raquo;</span>
+			</a></button>
+		</div>
+</div>
+	<!-- <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
 		<div class="btn-group my-2" role="group" aria-label="First group">
 			<button type="button" class="btn btn-outline-secondary "><a class=" text-secondary my-0 text-decoration-none" href="#" aria-label="Previous">
 				<span aria-hidden="true" class="my-0">&laquo;</span>
@@ -544,15 +570,14 @@
 			<input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
 			<button class="btn btn-secondary me-3" type="submit" title="search" alt="search"><i class="bi bi-search"></i></button>
 		</div>
-	</div>
+	</div> -->
 
 
 
   </div>
 
-		
-<!-- FOOTER start -->
 
+<!-- =======  FOOTER start =================== -->
 	<div class="my-5"></div>
 	<div class="footer">
 			<div class="container">
@@ -568,17 +593,12 @@
 							<!-- <h5>Section</h5> -->
 							<ul class="nav flex-column">
 								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0 text-muted">소개</a>
+									<a href="about.html" class="nav-link p-0 text-muted">소개</a>
 								</li>
 								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0 text-muted">오시는길</a>
+									<a href="notice.html" class="nav-link p-0 text-muted">공지사항</a>
 								</li>
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0 text-muted">카톡방</a>
-								</li>
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0 text-muted">FAQs</a>
-								</li>
+
 							</ul>
 						</div>
 						<div class="col-6 col-md-2 mb-3">
@@ -593,9 +613,7 @@
 								<li class="nav-item mb-2">
 									<a href="https://secure.donus.org/peoplepower21/pay/step1?dontype=P10101&period=pledge&price=20000" class="nav-link p-0 text-muted">참여연대 회원가입</a>
 								</li>
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0 text-muted">메뉴메뉴</a>
-								</li>
+
 							</ul>
 						</div>
 
@@ -653,9 +671,13 @@
 				</footer>
 				<button onclick="topFunction()" id="goTopBtn" title="Go to top">Top</button>
 			</div> 
-	</div><!-- FOOTER end -->	
+	</div>
+<!-- =======  FOOTER end =================== -->
+
+<!-- =======  SCRIPTS start ========= -->
 	
 	<script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
+
 	<!-- HEART LIKE : 위시리스트 담기 start -->	
 	<script>
 		$(document).ready(function(){
@@ -700,6 +722,30 @@
 	document.documentElement.scrollTop = 0;
 	}
 	</script> <!-- scroll to top end-->
+
+	<!-- TOAST start-->
+	<script>
+		const toastTrigger = document.getElementById('liveToastBtn')
+		const toastLiveExample = document.getElementById('liveToast')
+		if (toastTrigger) {
+		toastTrigger.addEventListener('click', () => {
+			const toast = new bootstrap.Toast(toastLiveExample)
+
+			toast.show()
+		})
+		}
+	</script><!-- TOAST end-->
+
+	<!-- MODAL -->
+	<script>
+		const myModal = document.getElementById('myModal')
+		const myInput = document.getElementById('myInput')
+
+		myModal.addEventListener('shown.bs.modal', () => {
+		myInput.focus()
+		})
+	</script><!-- MODAL -->
+<!-- =======  SCRIPTS end ========= -->
 
 </body>
 </html>

@@ -14,6 +14,7 @@ body {
 :root {
 	--link-color: white;
 	--link-green: #7bed9f;
+	--pointgreen: #188754;
 }
 
 .logoTitle {
@@ -29,6 +30,12 @@ body {
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 } */
+
+.gradient-text {
+	background: linear-gradient(60deg, #0fd850, var(--pointgreen));
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
 
 .navbg-custom,
 .hero {
@@ -54,6 +61,105 @@ body {
 
 .custom-shape-divider-bottom-1667480405 .shape-fill {
 	fill: #ffffff;
+}
+
+/* 흘러가는 텍스트 */
+.marquee {
+	padding: 0.5em 0;
+	overflow: hidden;
+	margin-bottom: 10px;
+	position: relative;
+}
+.marquee ul:hover {
+	-moz-animation-play-state: paused;
+	-webkit-animation-play-state: paused;
+	animation-play-state: paused;
+}
+.marquee ul:after {
+	content: "";
+	white-space: nowrap;
+	padding-right: 10px;
+}
+
+.marquee ul {
+	background: linear-gradient(
+		to left,
+		#3f87a6 10%,
+		var(--link-green) 25%,
+		var(--pointgreen) 35%
+	);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+
+	margin: 0;
+	padding-left: 100%;
+	display: inline-block;
+	white-space: nowrap;
+	-webkit-animation-name: marquee;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-name: marquee;
+	-moz-animation-timing-function: linear;
+	-moz-animation-duration: 20s;
+	-moz-animation-iteration-count: infinite;
+	-ms-animation-name: marquee;
+	-ms-animation-timing-function: linear;
+	-ms-animation-duration: 20s;
+	-ms-animation-iteration-count: infinite;
+	-o-animation-name: marquee;
+	-o-animation-timing-function: linear;
+	-o-animation-duration: 20s;
+	-o-animation-iteration-count: infinite;
+	animation-name: marquee;
+	animation-timing-function: linear;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+}
+@-webkit-keyframes marquee {
+	0% {
+		-webkit-transform: translate(0%);
+	}
+	99%,
+	to {
+		-webkit-transform: translate(-100%);
+	}
+}
+@-moz-keyframes marquee {
+	from {
+		-moz-transform: translate(0%);
+	}
+	99%,
+	to {
+		-moz-transform: translate(-100%);
+	}
+}
+@-ms-keyframes marquee {
+	from {
+		-ms-transform: translate(0%);
+	}
+	99%,
+	to {
+		-ms-transform: translate(-100%);
+	}
+}
+@-o-keyframes marquee {
+	from {
+		-o-transform: translate(0%);
+	}
+	99%,
+	to {
+		-o-transform: translate(-100%);
+	}
+}
+@keyframes marquee {
+	from {
+		transform: translate(0%);
+	}
+	99%,
+	to {
+		transform: translate(-100%);
+	}
 }
 
 /* Main  =========================
@@ -149,6 +255,30 @@ card ========================= */
 	margin-right: 5px;
 }
 
+.bg-info {
+	background-color: tomato !important;
+}
+
+.btn-outline-info {
+	--bs-btn-color: tomato;
+	--bs-btn-border-color: tomato;
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: tomato;
+	--bs-btn-hover-border-color: tomato;
+	--bs-btn-focus-shadow-rgb: 13, 202, 240;
+	--bs-btn-active-color: #000;
+	--bs-btn-active-bg: tomato;
+	--bs-btn-active-border-color: tomato;
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: tomato;
+	--bs-btn-disabled-bg: transparent;
+	--bs-gradient: none;
+}
+
+#chamgi a:hover {
+	color: lightsalmon;
+}
+
 /* COURSES_DETAIL 상세페이지 ================== */
 
 .review_message {
@@ -166,8 +296,8 @@ card ========================= */
 
 #goTopBtn {
 	position: fixed;
-	bottom: 200px;
-	right: 16px;
+	bottom: 50px;
+	right: 8px;
 	z-index: 99;
 	border: none;
 	outline: none;

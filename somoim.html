@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>소모임</title>
+		<link rel="icon" href="img/pspd_favicon_aca.svg" />
 
 		<link rel="icon" href="" />
 		<script src="https://cdn.lordicon.com/lusqsztk.js"></script>
@@ -82,7 +83,7 @@
 	<!-- HEADER start -->
 	<nav class=" navbar navbar-expand-lg sticky-top bg-gradient shadow-lg navbg-custom " aria-label="Offcanvas navbar large">
     <div class="container">
-      <a class="navbar-brand" href="/#"><h1 class="logoTitle fs-4 mb-0">아카데미느티나무</h1></a>
+      <a class="navbar-brand " href="/index.html"><h1 class="logoTitle fs-4 mb-0 me-3">아카데미느티나무</h1></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -93,42 +94,30 @@
         </div>
         <div class="offcanvas-body align-items-center">
 			<ul class="navbar-nav justify-content-end flex-grow-2 pe-3">
-				<li class="nav-item">
-					<a class="nav-link link-secondary" href="about.html" >소개</a>
+
+				<li class="nav-item dropdown">
+					<li class="nav-item fw-bold">
+					<a class="nav-link " aria-current="page" href="courses.html" >강좌</a>
 				</li>
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="courses.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-						강좌
-					</a>
-					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="courses.html">강좌목록</a></li>
-						<li><a class="dropdown-item" href="courses_review.html">강좌후기</a></li>
-					</ul>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="somoim.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					<a class="nav-link dropdown-toggle fw-bold" href="somoim.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 						커뮤니티
 					</a>
 					<ul class="dropdown-menu">
 						<li><a class="dropdown-item" href="somoim.html">소모임</a></li>
+						<li><a class="dropdown-item" href="courses_review.html">수강후기</a></li>
 						<li>
 							<hr class="dropdown-divider">
 						</li>
-						<li><a class="dropdown-item" href="notice.html">공지사항</a></li>
 						<li><a class="dropdown-item" href="together.html">배움나눔</a></li>
+						<!-- <li><a class="dropdown-item" href="notice.html">공지사항</a></li> -->
 						
 					</ul>
 				</li>
 				<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="QnA.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-						문의
-					</a>
-					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="QnA.html">문의하기</a></li>
-						<li><a class="dropdown-item" href="faq.html">FAQs</a></li>
-						<li><a class="dropdown-item" href="faq.html">오시는길</a></li>
-					</ul>
-				</li>
+					<li class="nav-item">
+					<a class="nav-link link-secondary" href="QnA.html" >문의</a>
+					</li>
 				</li>
 			</ul>
 			<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -136,16 +125,16 @@
 				
 				
 				<li class="nav-item dropdown">
-				<button class="btn btn-outline-dark dropdown-toggle my-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-					김로긴
+				<button class="btn btn-outline-secondary my-2" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+					로그인
 				</button>
-				<ul class="dropdown-menu dropdown-menu-end">
+				<!-- <ul class="dropdown-menu dropdown-menu-end">
 					<li><a class="dropdown-item" href="#">마이페이지</a></li>
 					<li><a class="dropdown-item" href="#">회원정보</a></li>
 					<li><hr class="dropdown-divider"></li>
 					<p class="dropdown-item mb-0" data-bs-toggle="modal" data-bs-target="#exampleModal">로그인</p>
 					<li><a class="dropdown-item" href="#">로그아웃</a></li>
-				</ul>
+				</ul> -->
 				</li>
 			</ul>
 
