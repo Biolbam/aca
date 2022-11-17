@@ -165,8 +165,8 @@
 	</div><!--Breadcrumb end -->
 
 	<div class="px-4 pb-3  text-center">
-		<h2 class="fw-bold lh-1"><span class="gradient-text">문의하기</span></h2>
-		<p class="mx-auto col-md-6 pt-2 opacity-50">수강신청, 취소환불 등 문의를 남겨주세요</p>
+		<h2 class="fw-bold lh-1"><span class="gradient-text">[리스트형태] 문의/배움나눔 게시판</span></h2>
+		<p class="mx-auto col-md-6 pt-2 opacity-50">설명이 들어가는 곳</p>
 	</div>
 </div>
 
@@ -185,7 +185,6 @@
 			<li class="m-1"><a href="#" class="btn btn-outline-dark btn-sm">회원할인</a></li>
 			<li class="m-1"><a href="#" class="btn btn-outline-dark btn-sm">대기접수</a></li>
 			<li class="m-1"><a href="#" class="btn btn-outline-dark btn-sm">취소환불</a></li>
-			<li class="m-1"><a href="#" class="btn btn-outline-dark btn-sm">시민예술</a></li>
 			<li class="m-1"><a href="#" class="btn btn-outline-dark btn-sm">기타문의</a></li>
 		</ul>
 </div>
@@ -373,7 +372,8 @@
 <!-- DETAIL end =================== -->
 
 
-	<!-- FOOTER start -->
+
+<!-- =======  FOOTER start =================== -->
 	<div class="my-5"></div>
 	<div class="footer">
 			<div class="container">
@@ -389,17 +389,12 @@
 							<!-- <h5>Section</h5> -->
 							<ul class="nav flex-column">
 								<li class="nav-item mb-2">
-									<a href="/about.html" class="nav-link p-0 text-muted">소개</a>
+									<a href="about.html" class="nav-link p-0 text-muted">소개</a>
 								</li>
 								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0 text-muted">오시는길</a>
+									<a href="notice.html" class="nav-link p-0 text-muted">공지사항</a>
 								</li>
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0 text-muted">카톡방</a>
-								</li>
-								<li class="nav-item mb-2">
-									<a href="/faq.html" class="nav-link p-0 text-muted">FAQs</a>
-								</li>
+
 							</ul>
 						</div>
 						<div class="col-6 col-md-2 mb-3">
@@ -414,9 +409,7 @@
 								<li class="nav-item mb-2">
 									<a href="https://secure.donus.org/peoplepower21/pay/step1?dontype=P10101&period=pledge&price=20000" class="nav-link p-0 text-muted">참여연대 회원가입</a>
 								</li>
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0 text-muted">메뉴메뉴</a>
-								</li>
+
 							</ul>
 						</div>
 
@@ -474,9 +467,13 @@
 				</footer>
 				<button onclick="topFunction()" id="goTopBtn" title="Go to top">Top</button>
 			</div> 
-	</div><!-- FOOTER end -->	
+	</div>
+<!-- =======  FOOTER end =================== -->
+
+<!-- =======  SCRIPTS start ========= -->
 	
 	<script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
+
 	<!-- HEART LIKE : 위시리스트 담기 start -->	
 	<script>
 		$(document).ready(function(){
@@ -521,6 +518,30 @@
 	document.documentElement.scrollTop = 0;
 	}
 	</script> <!-- scroll to top end-->
+
+	<!-- TOAST start-->
+	<script>
+		const toastTrigger = document.getElementById('liveToastBtn')
+		const toastLiveExample = document.getElementById('liveToast')
+		if (toastTrigger) {
+		toastTrigger.addEventListener('click', () => {
+			const toast = new bootstrap.Toast(toastLiveExample)
+
+			toast.show()
+		})
+		}
+	</script><!-- TOAST end-->
+
+	<!-- MODAL -->
+	<script>
+		const myModal = document.getElementById('myModal')
+		const myInput = document.getElementById('myInput')
+
+		myModal.addEventListener('shown.bs.modal', () => {
+		myInput.focus()
+		})
+	</script><!-- MODAL -->
+<!-- =======  SCRIPTS end ========= -->
 
 </body>
 </html>
