@@ -15,6 +15,7 @@ body {
 	--link-color: white;
 	--link-green: #7bed9f;
 	--pointgreen: #188754;
+	--bs-link-color: #198754;
 }
 
 .logoTitle {
@@ -192,7 +193,7 @@ card ========================= */
 
 #popcard .card {
 	top: 0px;
-	transition: opacity 0.15s linear;
+	transition: 0.2s;
 }
 #popcard .card:hover {
 	top: -6px;
@@ -220,7 +221,7 @@ card ========================= */
 
 .imgblur {
 	position: absolute;
-	filter: blur(8px) grayscale(100%);
+	filter: blur(5px) grayscale(50%);
 	mix-blend-mode: multiply;
 	background-size: cover;
 }
@@ -233,7 +234,7 @@ card ========================= */
 	background-color: whitesmoke;
 }
 
-/* test */
+/* 후기 scrolling-wrapper */
 
 .scrolling-wrapper {
 	max-height: 300px;
@@ -266,7 +267,13 @@ card ========================= */
 	overflow: hidden;
 }
 
+/* 후기 scrolling-wrapper 끝 */
+
 .bg-info {
+	background-color: tomato !important;
+}
+
+.text-bg-info {
 	background-color: tomato !important;
 }
 
@@ -343,9 +350,8 @@ card ========================= */
 }
 
 th,
-td:nth-child(2),
-td:nth-child(5),
-td:nth-child(6) {
+td:first-child,
+td:nth-last-child(-n + 3) {
 	color: #333;
 	opacity: 0.7;
 	font-size: 0.9em;
@@ -433,7 +439,7 @@ td:nth-child(6) {
 	opacity: 100%;
 }
 
-.card h4: {
+.card h4 {
 	color: #333;
 }
 
@@ -441,7 +447,35 @@ td:nth-child(6) {
 	color: var(--pointgreen);
 }
 
-/* ACTION : CARDS
+.pagination {
+	--bs-pagination-color: #6c757d !important;
+	--bs-pagination-hover-color: #495057 !important;
+	--bs-pagination-focus-color: #198754 !important;
+	--bs-pagination-active-bg: #6c757d !important;
+	--bs-pagination-active-border-color: #6c757d !important;
+	margin-bottom: 0px;
+}
+
+/* board 에디터 글쓰기 */
+
+#board_inside p,
+#board_inside li {
+	font-size: 1.1em;
+}
+
+#board_inside a {
+	color: #198754;
+}
+
+#board_inside a:hover {
+	color: yellowgreen;
+}
+
+#board_inside img {
+	max-width: 100%;
+}
+
+/* 메인 CARDS : 소모임
 -------------------------------------------------- */
 
 .card-lists {
@@ -527,3 +561,6 @@ td:nth-child(6) {
 .author-avatar img:hover {
 	filter: grayscale(0%);
 }
+
+/* 메인 CARDS : 소모임 끝
+-------------------------------------------------- */
