@@ -14,7 +14,7 @@ body {
 :root {
 	--link-color: white;
 	--link-green: #7bed9f;
-	--pointgreen: #188754;
+	--pointgreen: #1aa966;
 	--bs-link-color: #198754;
 }
 
@@ -564,3 +564,16 @@ td:nth-child(6) {
 
 /* 메인 CARDS : 소모임 끝
 -------------------------------------------------- */
+
+/* search */
+.search_thumb {
+	height: 80px;
+}
+
+a {
+	color: var(--bs-link-color);
+	text-decoration: none;
+}
+a:hover {
+	color: var(--pointgreen);
+}
